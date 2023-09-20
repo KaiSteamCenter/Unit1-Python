@@ -80,10 +80,16 @@ TASK 5:
 Create a string variable with that is a list of numbers and convert that string into a tuple.
 Then print out the both the original string and tuple.
 """
-4
+
 nmbrs = "1, 2, 3, 4, 5"
 
 nmbrsList = nmbrs.split(', ')
 nmbrsTuple = tuple(int(num) for num in nmbrsList)
 print('Original String = ', nmbrs)
+print('List = ', nmbrsList)
 print('Tuple = ', nmbrsTuple)
+
+# created a string var called nmbrs
+# made a list by splitting the nmbrs string
+# made into a tuple by making the numbers in the nmbrsList into a int
+# printed the original sstring and the tuple.
