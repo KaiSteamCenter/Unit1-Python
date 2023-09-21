@@ -3,7 +3,7 @@ Task 1: Create a list
 Create a list with 4 elements and print it.
 """
 
-elements = ["element1", "element2", "element3", "element4"]
+elements = ["gta", "minecraft", "ps5", "r6s"]
 print(elements)
 # Define a list of elements
 # Print the elements
@@ -14,9 +14,9 @@ Add an element to the end of the list. Print the updated
 list.
 """
 
-elements.append('element5')
+elements.append('payday3')
 print(elements)
-# Append 'element5' to the list
+# Append 'payday3' to the list
 # Print the updated list
 
 """
@@ -25,9 +25,9 @@ Remove a specific element from the list. Print the
 updated list.
 """
 
-elements.remove('element5')
+elements.remove('payday3')
 print(elements)
-# Remove 'element5' from the list
+# Remove 'payday3' from the list
 # Print the updated list
 
 """
@@ -36,9 +36,9 @@ Modify an element at a specific index with a new value.
 Print the updated list.
 """
 
-elements[3] = 'element_rewritten' 
+elements[3] = 'roblox' 
 print(elements)
-# Replace the element at index 3 with 'element_rewritten'
+# Replace the element at index 3 with 'roblox'
 # Print the updated list
 
 """
@@ -47,11 +47,11 @@ Append multiple elements to the end of the list. Print
 the updated list.
 """
 
-elements.append('element4')
-elements.append('element5')
+elements.append('cod')
+elements.append('mw2')
 print(elements)
-# Append 'element4' to the list
-# Append 'element5' to the list
+# Append 'cod' to the list
+# Append 'mw2' to the list
 # Print the updated list
 
 """
