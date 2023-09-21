@@ -71,9 +71,9 @@ Create a new variable equal to the first 2 items of your list
 Then print out the new variable
 """
 
-elementsExtended = ['element1','element2']
+elementsExtended = (elements[0:2])
 print(elementsExtended)
-# Define a new list 'elementsExtended'
+# Create a new list 'elementsExtended' containing elements from index 0 to 1 (inclusive) of the 'elements' list
 # Print the 'elementsExtended' list
 
 """
@@ -87,4 +87,3 @@ print(elements)
 # Extend the 'elements' list by adding the contents of 'elementsExtended'
 # Print the updated 'elements' list
 
-""""
