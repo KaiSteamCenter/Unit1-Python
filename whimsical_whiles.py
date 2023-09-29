@@ -31,7 +31,26 @@ while i >= 1:
 Write a program that calculates the factorial of a given number using a while loop.
 """
 
+num = int(input("Enter a number: "))
 
+factor = 1
+
+if num < 0:
+    print("Error")
+elif num == 0:
+    print("The factorial of 0 is 1.")
+else:
+    while num > 0:
+        factor *= num
+        num -= 1
+    
+    print(f"The factorial is: {factor}")
+
+# Input from the user
+# Initialize the factorial to 1
+# Check if the number is negative, zero, or positive
+# Calculate the factorial using a while loop
+# Prints factorial
 
 
 """
@@ -45,10 +64,7 @@ password = "password123"
 attempts = 5
 
 while attempts > 0:
-    # Ask the user for their guess
     guess = input("Enter your password guess: ")
-
-    # Check if the guess is correct
     if guess == password:
         print("You guessed the correct password.")
         break
@@ -58,18 +74,52 @@ while attempts > 0:
             print(f"Wrong password. You have {attempts} {'attempts' if attempts > 1 else 'attempt'} left.")
         else:
             print("Game over!")
+    # Ask the user for their guess
+    # Check if the guess is correct
+    # Subtracts attempts by 1.
+    # changes from attempts to attempt once it says "1"
+
 
 """
 5. Sum of Digits:
 Write a program that calculates the sum of the digits of a given number using a while loop.
 """
+totsum = 0
 
-while i < 15:
-    n1 = float(input("Input a 1st number: "))
-    n2 = float(input("Input a 2nd number: "))
+for i in range(5):
+    num = int(input("Enter a number: "))
+    
+    original_num = num
+    sum_of_digits = 0
+    
+    while num > 0:
+        digit = num % 10 
+        sum_of_digits += digit
+        num //= 10  
+    
+    totsum += sum_of_digits
+
+
+# makes a variable to store the total sum of digits
+# Loop five times (for five different numbers)
+# Input from the user, asking for a number
+# Calculate the sum of digits for the current number using a while loop
+# Get the last digit ("ex: 123 --> 3")
+# adds digit to the sum.
+# Removes last digit ("ex: 123 --> 12")
+
+
+print(f"The total sum of the digits for all five numbers is: {totsum}")
 
 
 """
 6. Fibonacci Series:
 Write a program that prints the first n numbers in the Fibonacci sequence using a while loop.
 """
+
+n = int(input("Enter the number of Fibonacci numbers to generate: "))
+
+a, b = 0, 1
+for i in range(n):
+    print(a)
+    a, b = b, a + b
