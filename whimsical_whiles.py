@@ -123,3 +123,8 @@ a, b = 0, 1
 for i in range(n):
     print(a)
     a, b = b, a + b
+
+# Take user input for the number of Fibonacci numbers.
+# Initialize variables to represent the first two numbers
+# Use a loop to generate and print the first 'n' Fibonacci numbers
+# Calculate the next number and update 'a' and 'b'
