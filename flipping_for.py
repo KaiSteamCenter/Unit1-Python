@@ -23,17 +23,11 @@ Exercise 3:
 Write a program to print the length of each word in a sentence using a for loop and a list.
 """
 
-# Input sentence
-sentence = "This is a sample sentence with various words of different lengths"
-# Split the sentence into words
+sentence = "this is a sample sentenence that make no sense"
 words = sentence.split()
-# Initialize an empty list to store the lengths
-word_lengths = []
-# Using a for loop to calculate and store the length of each word in the list
-for word in words:
-    word_lengths.append(len(word))
-# Print the list of word lengths
-print("Word lengths:", word_lengths)
+
+for x in words:
+    print(f"The length of", {x}, "is", len(x))
 
 """
 Excercise 4:
@@ -45,6 +39,7 @@ Is it what you expected?
 """
 
 
+
 dict = {
     'name': "Mekhi",
     'age': "17",
@@ -53,6 +48,7 @@ dict = {
 } # Create a dict with at least four key-value pairs
 
 
-for key, value in dict.items(): # iterates the dictionary and printing key-value
-
-    print(f"{key}: {value}")
+for x in dict: # iterates the dictionary and printing the key of 
+    print(x)
+    # I notice that once printed, the code shows the 4 keys in different lines of code. This is not what I expected. 
+    # I had expected for us to be printing both the key and the value.
