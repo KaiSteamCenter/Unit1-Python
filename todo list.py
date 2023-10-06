@@ -29,13 +29,14 @@ while True:
         todos.append(new_todo)
         
     # Check if the user wants to remove a todo.
-    elif useraction == "remove":
+    elif useraction == "remove" or useraction == "del" or useraction == "delete":
         try:
             # Ask the user which todo to remove by its index.
             index_to_remove = int(input("Which # todo would you like to remove: ")) - 1
             if 0 <= index_to_remove < len(todos):
                 # Remove the todo at the specified index and display a confirmation message.
-                removed_todo = todos.pop(index_to_remove)
+                removed_todo = todos[index_to_remove]  # Store the item to be removed
+                del todos[index_to_remove]  # Delete the item from the list               
                 print(f"Removed: {removed_todo}")
             else:
                 # Handle the case of an invalid index.
