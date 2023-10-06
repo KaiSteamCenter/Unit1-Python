@@ -45,7 +45,7 @@ while True:
         except ValueError:
             # Handle the case of invalid input (non-integer).
             print("Invalid input. Please enter a valid number.")
-            
+    
   # Check if the user wants to stop the program.
     elif useraction == "stop":
         # Display a goodbye message and exit the loop to end the program.
