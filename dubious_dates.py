@@ -7,7 +7,7 @@ Write a Python program that prints the current date and time using the datetime 
 
 print(datetime.datetime.now())
 
-# Literal function..
+# Literal function??
 
 """
 Exercise 2:
@@ -39,6 +39,8 @@ date2 = datetime.datetime.strptime(datestr2, "%m %d %Y")
 
 difference = (date2 - date1).days
 
+# Finds difference of date and time, by subtracting date2 by date1
+
 print("The difference is", difference, "days")
 
 
@@ -48,14 +50,21 @@ Write a program that asks the user for their birthdate and calculates their curr
 age using the datetime module.
 """
 
-birthdateStr = input("What is your birthday, MM-DD-YYYY: ")
+birthdateStr = input("What is your birthday, MM/DD/YYYY: ")
+# Input your birthday, form of M/D/Y
 
 
 birthdate = datetime.datetime.strptime(birthdateStr,"%m/%d/%Y")
 currentDate = datetime.datetime.now()
 
+# Makes new variable named birthdate to transfer string input into birthdate input, being M/D/Y
+
 age = currentDate.year - birthdate.year - ((currentDate.month, currentDate.day) < (birthdate.month, birthdate.day))
 
+# Makes new variable to input age. (Subtracts current date from birth year), (Checks if current month and current day is less than birth month and day)
+
 print("You are", age, "years old")
+
+
 
 
