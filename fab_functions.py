@@ -17,12 +17,28 @@ sum_numbers(5,6) # Calls function w/ arguments 5 and 6
 # Task 3: Calculate Factorial
 # Write a function `factorial(n)` that calculates the factorial of a given number `n`.
 
-def factorial(n): # Creates function w/ a argument 'n'
-    if n <= 0: # Checks if n is equal to / less than 0, if it is it prints 1
-        return 1
+# Creates a function named 'factorial' w/ argument 'n'
+def factorial(n):
+    factor = 1
+    if n < 0:
+        # If 'n' is negative, print an error message.
+        print("Error")
+    elif n == 0:
+        # If 'n' is 0, print a message indicating that the factorial of 0 is 1.
+        print("The factorial of 0 is 1.")
     else:
-        return n * factorial(n - 1) # Else, does factorial (Math Function)
-print(factorial(0)) # Prints factorial
+        # Else, repeats a while loop that continues while 'n' is greater than 0.
+        while n > 0:
+            # Multiply 'factor' by 'n' to calculate the factorial.
+            factor *= n
+            # Decrease the value of 'n' by 1 in each iteration to calculate the factorial for the next number.
+            n -= 1
+        # Print the calculated factorial value once the loop is done.
+        print(factor)
+
+# Call the 'factorial' function with an argument of 5.
+factorial(5)
+
 
 # Task 4: Check Even or Odd
 # Write a function `is_even(num)` that takes a number as a parameter and returns `True` if the number is even, and `False` otherwise.
