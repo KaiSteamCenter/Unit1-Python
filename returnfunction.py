@@ -35,7 +35,6 @@ and returns the average (mean) of those numbers.
 
 def avgNumber(a): # Creates function
     total = sum(a) # Retrieves total of sum of list
-    avg = total / len(a) # Retieves avg by dividing total by length of avg
-    return avg # Returns avg value
+    return total / len(a) # Returns and retieves avg by dividing total by length of avg
 
 print(avgNumber([6, 5, 4, 6, 2, 9, 15])) # Calls function
